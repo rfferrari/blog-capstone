@@ -1,0 +1,87 @@
+<%- include("partials/header.ejs") %>
+    <div class="relative flex h-auto min-h-screen w-full flex-col">
+        <!-- Top Nav Bar -->
+        <header
+            class="flex h-16 w-full items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-800 px-4 sm:px-6 lg:px-8 bg-background-light dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50">
+            <div class="flex items-center gap-4">
+                <span class="material-symbols-outlined text-primary text-3xl">draw</span>
+                <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-gray-900 dark:text-white">My Blog
+                </h2>
+            </div>
+            <div class="flex flex-1 justify-end items-center gap-4">
+                <button onclick="newPost()"
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                    <span class="truncate">Create New Post</span>
+                </button>
+            </div>
+        </header>
+        <!-- Main Content Area -->
+        <div class="flex flex-1">
+            <!-- Posts List -->
+            <main class="flex-1 p-4 sm:p-6 lg:p-8">
+                <!-- Page Heading -->
+                <div class="flex flex-wrap justify-between items-center gap-3 mb-6">
+                    <h1
+                        class="text-gray-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">
+                        My Blog Posts</h1>
+                </div>
+                <% if (locals.posts.length> 0) { %>
+                    <!-- Posts Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                        <% posts.forEach((post)=> { %>
+                            <div
+                                class="group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all">
+                                <div class="aspect-video w-full bg-cover bg-center" data-alt="Thumbnail image"
+                                    style="background-image: url(<%=post.thumbnail%>);">
+                                </div>
+                                <div class="p-4 flex flex-col flex-grow">
+                                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                                        <%=post.title%>
+                                    </h3>
+                                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 flex-grow">
+                                        <%=post.summary%>
+                                    </p>
+                                    <div
+                                        class="mt-4 flex justify-between items-center text-xs text-gray-400 dark:text-gray-500">
+                                        <span>
+                                            <%=new Date(post.date).toDateString()%>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="border-t border-gray-200 dark:border-gray-800 p-2 flex items-center justify-end gap-1">
+                                    <button onclick="viewPost('<%= post.id %>')"
+                                        class="flex items-center justify-center size-8 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-500 dark:text-gray-400"><span
+                                            class="material-symbols-outlined">visibility</span></button>
+                                    <button onclick="editPost('<%= post.id %>')"
+                                        class="flex items-center justify-center size-8 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-500 dark:text-gray-400"><span
+                                            class="material-symbols-outlined">edit</span></button>
+                                    <button onclick="deletePost('<%= post.id %>')"
+                                        class="flex items-center justify-center size-8 rounded-lg hover:bg-red-100/50 dark:hover:bg-red-900/20 text-gray-500 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-500"><span
+                                            class="material-symbols-outlined">delete</span></button>
+                                </div>
+                            </div>
+                            <%}) %>
+                    </div>
+                    <% } else {%>
+
+                        <div
+                            class="md:col-span-2 xl:col-span-3 flex flex-col items-center justify-center text-center p-10 border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-xl mt-4">
+                            <span
+                                class="material-symbols-outlined text-5xl text-gray-400 dark:text-gray-600 mb-4">edit_document</span>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200">No Posts to Show
+                            </h3>
+                            <p class="mt-1 text-gray-500 dark:text-gray-400">It looks like you've reached the
+                                end.
+                                Why not create something new?</p>
+                            <button (click)="/new-post"
+                                class="mt-4 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                                <span class="truncate">Create New Post</span>
+                            </button>
+                        </div>
+                        <% } %>
+            </main>
+        </div>
+    </div>
+    <script src="/js/post.js"></script>
+    <%- include("partials/footer.ejs") %>

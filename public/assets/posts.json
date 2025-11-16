@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "thumbnail": "https://lh3.googleusercontent.com/aida-public/AB6AXuCbs-eKVhr7sJ6rjjDA77RZvVpG5hdnWUR-zXG47FxvvEaoz588XkBpbnvH8k-yHhjeE5vqMVeQGVi3hDFClyHJaqTfjtykwoDlC7H1x50CxDVD0pU8PPwgrDbqqwBpT9J2uqPZRIQ_Gm538HNmkL5p0SC7VlEbFAUgatS0w0rlaEiF3uW2shSXHKLupTrLXDpTJIUOOO2TqQL_YZyDR5mPtvZcgGOPiZVyz7KfVg3MFmu6Dd9Q22yhh_9rnzX28gXLmQHGGl2leD4s",
+      "title": "The Future of AI in Web Development",
+      "summary": "An in-depth look at how artificial intelligence is shaping the future of web development, from automated coding to personalized user experiences.",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere elit eget cursus mattis. In ultrices lorem felis, sit amet auctor arcu aliquet vestibulum. Vestibulum vel dolor ornare, sollicitudin risus in, interdum ex. Cras consectetur efficitur volutpat. Donec accumsan velit ut pretium porta. Sed efficitur at augue sollicitudin dapibus. Cras velit eros, finibus id nulla eget, tempus accumsan justo. In fringilla lobortis ligula, sed auctor enim mattis in. Quisque a bibendum turpis. Aenean a sem eros. Fusce lacinia, nulla placerat dapibus fermentum, orci dui lobortis ipsum, vel pretium libero mauris ac justo. Nunc eu lectus urna. Sed interdum augue at hendrerit consequat. Suspendisse non imperdiet elit. Nam scelerisque consequat lobortis. Etiam sed commodo ex. Sed feugiat odio ipsum, nec malesuada lorem ultricies et.",
+      "date": "2025-11-16T18:52:02.416Z"
+    },
+    {
+      "title": "10 Productivity Hacks for Remote Workers",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec sem id sapien finibus ornare dignissim sit amet odio. Sed feugiat tortor a ligula rutrum, id pharetra dolor vehicula. Cras venenatis leo sit amet mauris vulputate, non tempor eros mollis. Vestibulum ut ante aliquam, mattis nulla et, lacinia mi. Vestibulum vestibulum enim ac ante condimentum blandit et vitae dui. Vestibulum ac ornare nisi, eget ullamcorper purus. Quisque eget congue orci, in fringilla libero. Etiam ac odio vitae purus varius condimentum. Sed sed hendrerit dolor. Suspendisse tempus justo ut tortor hendrerit rhoncus. Quisque dignissim et enim sit amet egestas. Aenean rutrum neque non mauris malesuada venenatis.\n\nCras vitae lorem ut lacus tincidunt viverra. Donec interdum lorem elit, suscipit tincidunt sapien vestibulum eu. Suspendisse imperdiet bibendum feugiat. Duis volutpat arcu nibh, eget ultricies lacus fermentum nec. Quisque ut commodo tortor. Proin urna mi, volutpat a sem vel, condimentum auctor sapien. Aliquam sodales tellus nec porttitor bibendum. Curabitur elementum in ipsum et porta. Nulla pharetra neque vitae venenatis tristique. Integer in erat dui.\n\nIn elit turpis, condimentum vel fringilla eu, semper eget dui. Quisque feugiat sagittis purus ut malesuada. Sed consectetur ut arcu vel consequat. Duis sem dolor, interdum sagittis rutrum nec, finibus ut ipsum. Donec pharetra ante ante, ut luctus tortor fermentum pharetra. Sed sed neque ipsum. Nulla facilisi. Phasellus at vestibulum ligula, non facilisis turpis.",
+      "summary": "Discover essential tips and tricks to stay focused, organized, and productive while working from home. Boost your efficiency today.",
+      "thumbnail": "https://lh3.googleusercontent.com/aida-public/AB6AXuD7bj4UEPUvWIsATNQGVOv6AFn_v80XEtRvtwAswX06L3HJwF4E7t8NYzf1WVjLEc1ZY1RHznpa7BCxPvZ9Nd090jfkS7QzZdsvVdVPE_RsjbVIz1uBtBXHBLZZoeha-y7anGT1vS_JxuuFOwKhBRYIPxksZTnHTkWC37W2m63gtd2kX_pqCmyzcVwYazUEk-3NFjvYVxVcgpc6KRsZmUnxL5-7SCwp5jZEEyVvRJCdZzGT1-fpq9p644V7HX5Pcs_UU7P_TKsQNlUj",
+      "date": "2025-11-16T18:51:55.208Z",
+      "id": "2"
+    }
+  ],
+  "version": 11
+}

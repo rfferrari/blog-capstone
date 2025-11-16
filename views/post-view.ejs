@@ -1,0 +1,49 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-slate-200 dark:border-slate-800 px-6 md:px-10 py-3 bg-background-light dark:bg-background-dark sticky top-0 z-10">
+                <div class="flex items-center gap-4">
+                    <span class="material-symbols-outlined text-primary text-3xl">draw</span>
+                    <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-gray-900 dark:text-white">My
+                        Blog
+                    </h2>
+                </div>
+                <div class="flex flex-1 justify-end items-center gap-4 md:gap-8">
+                    <a class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                        href="/">Back to Posts</a>
+                </div>
+            </header>
+            <main class="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+                <% if (locals.post) { %>
+                <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden">
+                    <div class="p-6 sm:p-10">
+                        <h1
+                            class="text-3xl sm:text-5xl font-black text-gray-900 dark:text-white leading-tight tracking-tight">
+                            <%=post.title%>
+                        </h1>
+                        <p class="mt-4 text-lg text-gray-500 dark:text-gray-400"><%=post.summary%></p>
+                    </div>
+                    <div class="aspect-[16/9] w-full bg-cover bg-center"
+                        data-alt="Abstract image about minimalist design principles"
+                        style="background-image: url('<%=post.thumbnail%>');">
+                    </div>
+                    <div class="p-6 sm:p-10 prose prose-lg max-w-none">
+                        <%=post.content%>
+                    </div>
+                </div>
+                    <% } else {%>
+                        <div
+                            class="md:col-span-2 xl:col-span-3 flex flex-col items-center justify-center text-center p-10 border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-xl mt-4">
+                            <span
+                                class="material-symbols-outlined text-5xl text-gray-400 dark:text-gray-600 mb-4">error</span>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200">No posts found
+                            </h3>
+                        </div>
+                        <% } %>
+            </main>
+        </div>
+    </div>
+    <script src="/js/post.js"></script>
+    <%- include("partials/footer.ejs") %>
