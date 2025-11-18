@@ -92,7 +92,7 @@ app.post("/add", async (req, res) => {
       newItemData.id = `${jsonObject.posts.length + 1}`;
       jsonObject.posts.push(newItemData);
       jsonObject.version += 1;
-      console.log(`Successfully create post ID ${postToEdit.id}.`);
+      console.log(`Successfully create post.`);
     } else {
       newItemData.id = `1`;
       jsonObject.posts = [newItemData];

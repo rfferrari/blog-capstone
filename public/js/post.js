@@ -1,3 +1,29 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const contentInput = document.querySelector('[name="content"]');
+    const countSpan = document.getElementById('count');
+    if (contentInput && countSpan) {
+        const updateCount = () => {
+            countSpan.textContent = contentInput.value.length;
+        };
+        contentInput.addEventListener('input', updateCount);
+        updateCount(); 
+    }
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const thumbnailInput = document.querySelector('[name="thumbnail"]');
+    const thumbnailPreview = document.querySelector('[data-alt="Thumbnail image"]');
+    if (thumbnailInput && thumbnailPreview) {
+        thumbnailInput.addEventListener('input', function () {
+            const url = thumbnailInput.value.trim();
+            if (url) {
+                thumbnailPreview.style.backgroundImage = `url(${url})`;
+            } else {
+                thumbnailPreview.style.backgroundImage = '';
+            }
+        });
+    }
+});
+
 function viewPost(itemId) {
     window.location.href = '/view-post/' + itemId;
 }
