@@ -3,6 +3,8 @@
 ## Sobre
 Este e o meu primeiro projeto em Node.js, criado como parte de um trabalho final (capstone) de curso. O objetivo e construir uma aplicacao web simples de blog usando Node.js, Express.js e EJS. Este projeto foca no aprendizado de fundamentos de backend, template engine e estilizacao web.
 
+<img width="1100" height="582" alt="image" src="https://github.com/rfferrari/blog-capstone/blob/main/docs/images/blog-post.gif" />
+
 ## O que sao Projetos Capstone?
 Projetos capstone sao atividades abrangentes criadas para consolidar e aplicar as habilidades aprendidas ao longo de um curso. Em geral, envolvem a construcao de uma aplicacao completa do zero, demonstrando entendimento dos conceitos principais e das boas praticas.
 
@@ -94,3 +96,6 @@ views/
 - Os posts sao lidos de `public/assets/posts.json`; ao recarregar, os dados voltam ao estado inicial.
 - A estilizacao e uma parte importante do projeto; revise e melhore o CSS para proporcionar melhor experiencia de usuario.
 - O Tailwind CSS e carregado via CDN e configurado em `header.ejs`.
+
+## Demo
+(blog-capstone)[https://blog-capstone.netlify.app/]
