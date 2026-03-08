@@ -1,43 +1,42 @@
-# Capstone Project: Blog Web Application
+# Projeto Capstone: Aplicacao Web de Blog
 
-## About
-This is my first project in Node.js, created as part of a course capstone assignment. The goal is to build a simple blog web application using Node.js, Express.js, and EJS. This project focuses on learning backend fundamentals, templating, and web styling.
+## Sobre
+Este e o meu primeiro projeto em Node.js, criado como parte de um trabalho final (capstone) de curso. O objetivo e construir uma aplicacao web simples de blog usando Node.js, Express.js e EJS. Este projeto foca no aprendizado de fundamentos de backend, template engine e estilizacao web.
 
-## What are Capstone Projects?
-Capstone projects are comprehensive assignments designed to consolidate and apply the skills learned throughout a course. They typically involve building a complete application from scratch, demonstrating understanding of core concepts and best practices.
+## O que sao Projetos Capstone?
+Projetos capstone sao atividades abrangentes criadas para consolidar e aplicar as habilidades aprendidas ao longo de um curso. Em geral, envolvem a construcao de uma aplicacao completa do zero, demonstrando entendimento dos conceitos principais e das boas praticas.
 
-## Project Description
-This application allows users to create, view, edit, and delete blog posts. Posts are stored in memory only (no database), so they do not persist between sessions. The app is styled for a good user experience and is responsive for both desktop and mobile devices.
+## Descricao do Projeto
+Esta aplicacao permite que usuarios criem, visualizem, editem e excluam posts do blog. Os posts sao armazenados apenas em memoria (sem banco de dados), portanto nao persistem entre sessoes. O app foi estilizado para oferecer boa experiencia ao usuario e e responsivo em dispositivos desktop e mobile.
 
-## Deliverables
-- One Node.js project for the website functionality
-- At least one EJS file for website structure
-- At least one CSS file for website styling
+## Entregaveis
+- Um projeto Node.js para a funcionalidade do site
+- Pelo menos um arquivo EJS para a estrutura do site
+- Pelo menos um arquivo CSS para a estilizacao do site
 
-## Features
-1. **Post Creation:** Users can create new blog posts.
-2. **Post Viewing:** The home page displays all posts.
-3. **Post Update/Delete:** Users can edit and delete posts.
-4. **Styling:** The app is well-styled and responsive, using Tailwind CSS for modern design.
+## Funcionalidades
+1. **Criacao de Posts:** Usuarios podem criar novos posts no blog.
+2. **Visualizacao de Posts:** A pagina inicial exibe todos os posts.
+3. **Atualizacao/Exclusao de Posts:** Usuarios podem editar e excluir posts.
+4. **Estilizacao:** O app e bem estilizado e responsivo, usando Tailwind CSS para um design moderno.
 
+## Requisitos Tecnicos
+- **Node.js & Express.js:** O backend e construido com Node.js e Express.js, cuidando de rotas e middlewares.
+- **EJS:** O EJS e usado como motor de templates para renderizacao dinamica de HTML.
+- **Tailwind CSS:** O Tailwind CSS e usado para estilizacao, com classes utility-first e design responsivo. Veja `views/partials/header.ejs` para a configuracao do Tailwind.
 
-## Technical Requirements
-- **Node.js & Express.js:** The backend is built with Node.js and Express.js, handling routing and middleware.
-- **EJS:** EJS is used as the templating engine for dynamic HTML rendering.
-- **Tailwind CSS:** Tailwind CSS is used for styling, providing utility-first classes and responsive design. See `views/partials/header.ejs` for Tailwind setup.
-
-## Getting Started
-1. Install dependencies:
+## Como Iniciar
+1. Instale as dependencias:
    ```bash
    npm install
    ```
-2. Start the server:
+2. Inicie o servidor:
    ```bash
    node index.js
    ```
-3. Open your browser and go to `http://localhost:3000` (or the port specified in your code).
+3. Abra o navegador e acesse `http://localhost:3000` (ou a porta especificada no seu codigo).
 
-## Folder Structure
+## Estrutura de Pastas
 ```
 index.js
 package.json
@@ -59,12 +58,7 @@ views/
     header.ejs
 ```
 
-
-## Notes
-- This project does **not** use a database; posts are not saved after the server restarts.
-- Styling is an important part of the project—make sure to review and improve the CSS for a better user experience.
-- Tailwind CSS is loaded via CDN and configured in `header.ejs`.
-
----
-
-Feel free to explore, modify, and learn from this project as you continue your journey in Node.js development!
+## Observacoes
+- Este projeto **nao** usa banco de dados; os posts nao sao salvos apos reiniciar o servidor.
+- A estilizacao e uma parte importante do projeto; revise e melhore o CSS para proporcionar melhor experiencia de usuario.
+- O Tailwind CSS e carregado via CDN e configurado em `header.ejs`.
